@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(214, 243, 252);
+    font-family: 'Manrope', sans-serif;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.imagediv{
+    height: 260px;  
+}
+.imagediv img{
+    height: 260px;
+    border-radius: 10px 0 0 10px;
+}
+.articlediv{
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    padding:22px;
+    border-radius: 0 10px 10px 0;
+}
+.articlediv .title{
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.articlediv .paragraph{
+    font-size: 13px;
+    color:rgb(197, 192, 192);
+    padding-bottom: 20px;
+}
+.writerimg{
+    display: flex;
+    align-items: center;
+    flex-flow:row wrap; 
+}
+.writerimg img{
+    height: 50px;
+    border-radius: 50%;
+}
+.writerimg p{
+    font-weight: bold;
+    display: flex;
+}
+.date{
+    color:rgb(197, 192, 192);
+    font-size: 12px;
+    padding-top: 5px;
+}
+.forwardimg img{
+   background-color:  rgb(214, 243, 252);
+   padding: 10px;
+   border-radius: 50%;
+}
+.secondcontainer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+.profile{
+    display: flex;
+    flex-flow: column;
+    margin:10px 5px 0 10px ;
+}
+.creator{
+    position: absolute;
+    margin-top: 328px;
+    display: flex;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .row{
+        flex-flow: column;
+        margin: 30px;
+        flex-basis: 100%;
+    }
+    .imagediv{
+      width: 100%;
+    }
+    .imagediv img{
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        object-fit: cover;
+    }
+    .articlediv{
+        border-radius: 0 0 10px 10px;
+    }
+    .creator{
+        margin-top: 650px;
+    }
+}
+
